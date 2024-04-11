@@ -20,8 +20,8 @@
 				<nav>
 					<ul>
 						<li><a href="#intro">¡Bienvenidos!</a></li>
-						<li><a href="#one">Que hacemos</a></li>
-						<li><a href="#two">Quien somos</a></li>
+						<li><a href="#one">Que hacemos?</a></li>
+						<li><a href="#two">Quien somos?</a></li>
 						<li><a href="#work">Nuestro Trabajo</a></li>
 						<li><a href="#contact">Hablanos</a></li>
 					</ul>
@@ -45,7 +45,7 @@
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Que hacemos</h2>
+						<h2>Que hacemos?</h2>
 					</header>
 					<p>En Arte Deco, nos especializamos en crear fondos de fiesta impresionantes y envolventes utilizando globos, cuidadosamente seleccionados para que coincidan con el tema específico de tu evento. Ya sea que estés celebrando un cumpleaños, una boda, un evento corporativo o cualquier ocasión especial, nuestro equipo de decoradores expertos trabajará estrechamente contigo para dar vida a tu visión.</p>
 				</div>
@@ -56,7 +56,7 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Quien somos</h2>
+						<h2>Quien somos?</h2>
 					</header>
 					<p>Somos Arte Deco, una empresa local ubicada en Tijuana y nos especializamos en la decoración de fiestas con globos para eventos de todo tipo. A pesar de ser nuevos en el mercado, contamos con un equipo de decoradores expertos que trabajará de cerca contigo para crear fondos de fiesta impresionantes y personalizados, adaptados a tus necesidades y preferencias. Ya sea un cumpleaños, una boda, un evento corporativo u otra ocasión especial, en Arte Deco nos comprometemos a hacer que tu evento sea memorable y único. ¡Contáctanos hoy mismo para comenzar a planificar la fiesta de tus sueños!</p>
 				</div>
@@ -105,14 +105,16 @@
 						<p><strong>¡Mandanos tu informacion!</strong> Arte Deco, estamos listos para convertir tu celebración en un evento inolvidable con nuestras increíbles decoraciones de globos. Ya sea un cumpleaños, boda, evento corporativo u otra ocasión especial, nuestro equipo de expertos está aquí para crear un ambiente único y personalizado que refleje tu estilo y temática. ¡Contáctanos hoy mismo para discutir tus ideas y juntos hagamos de tu evento un verdadero espectáculo de globos!</p>
 					</header>
 					<div class="box">
-						<form method="post" action="mailto:roberto.sanchez3478@gmail.com" enctype="text/plain">
+						<form method="post" action="send_email.php">
 							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Nombre" /></div>
-								<div class="field half"><input type="tel" name="phone" placeholder="Telefono" /></div>
-								<div class="field"><textarea name="message" placeholder="Tema de la celebracion / fecha / Facebook" rows="6"></textarea></div>
+								<div class="field half"><input type="text" name="name" placeholder="Nombre" required /></div>
+								<div class="field half"><input type="email" name="email" placeholder="Email" required /></div>
+								<div class="field half"><input type="tel" name="phone" placeholder="Telefono" required /></div>
+								<div class="field half"><input type="date" name="date" placeholder="Fecha de evento" required /></div>
+								<div class="field"><textarea name="message" placeholder="Tema de la celebracion / fecha / Facebook" rows="6" required></textarea></div>
 							</div>
 							<ul class="actions special">
-								<li><input type="submit" value="Envia" /></li>
+								<li><input type="submit" value="Envia" class="primary" /></li>
 							</ul>
 						</form>
 					</div>
